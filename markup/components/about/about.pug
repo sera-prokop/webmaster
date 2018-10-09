@@ -1,0 +1,7 @@
+mixin about(data)
+    #4.about
+        != pugHelpers.Icon.call(locals, {iconName: "about", className: "", iconWidth: "47", iconHeight: "47"})
+        h2.about__subtitle.subtitle Расскажите о себе
+        p.about__text Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.
+        textarea.about__textarea(placeholder="Понравилась тем, что...") Я просто хочу заниматься любимым делом. А если за это еще и платить будут, то это вообще замечательно:)
+

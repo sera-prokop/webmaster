@@ -1,0 +1,11 @@
+mixin worksheet(data)
+    .worksheet
+        .worksheet__bg
+        .worksheet__wrap.container
+            h1.worksheet__title Анкета
+            form(action="#").worksheet__form
+                +personal()
+                +skill()
+                +slider()
+                +about()
+                button(type="submit").worksheet__btn Готово

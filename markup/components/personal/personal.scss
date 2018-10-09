@@ -1,0 +1,75 @@
+.personal{
+    margin-bottom: 70px;
+    @media (max-width: 768px) {
+        margin-bottom: 50px;
+    }
+}
+
+.personal__field{
+    position: relative;
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto 25px;
+    &--drop{
+        max-width: 320px;
+    }
+}
+
+.personal__input{
+    border: 1px solid $borderColorInput;
+    border-radius: 4px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $roboto;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    color: $inputColor;
+    box-sizing: border-box;
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
+}
+
+.personal__list{
+    display: none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid $borderColorInput;
+    z-index: 1;
+    top: 0px;
+    box-sizing: border-box;
+    &.active {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.personal__item {
+    padding: 0 20px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $borderColorInput;
+    background-color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    justify-content: center;
+    cursor: pointer;
+
+    &:last-child {
+        border-bottom: none;
+    }
+    &:hover {
+        background-color: darken(#fff, 5%);
+    }
+    &.active{
+        order: -1;
+    }
+}
+
+.personal__arrow{
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}

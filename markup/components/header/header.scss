@@ -1,0 +1,53 @@
+.header{
+    position: fixed;
+    display: block;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+}
+
+.header__list{
+    display: flex;
+    justify-content: space-around;
+    min-height: 79px;
+    position: relative;
+    @media (max-width: 768px) {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        background-color: white;
+        flex-direction: column;
+        .header__item{
+            padding: 10px;
+        }
+    }
+    &.active{
+        display: flex;
+    }
+}
+
+.header__item{
+    display: flex;
+    &.active{
+        .header__link{
+            color: $headerItemActive;
+        }
+    }
+}
+
+.header__link{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: $headerColor;
+    text-decoration: none;
+    &:hover, &:focus{
+        color: $headerColorHover;
+    }
+    &:active{
+        color: $headerColorActive;
+    }
+}

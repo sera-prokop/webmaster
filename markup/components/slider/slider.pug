@@ -1,0 +1,13 @@
+mixin slider(data)
+    #3.slider
+        != pugHelpers.Icon.call(locals, {iconName: "js", className: "", iconWidth: "47", iconHeight: "47"})
+        h2.slider__subtitle.subtitle Уровень владения JavaScript
+        ul.slider__list
+            li.slider__item(data-item="1") Не владею
+            li.slider__item(data-item="2") Использую готовые<br> решения
+            li.slider__item(data-item="3") Использую готовые решения<br> и умею переделывать
+            li.slider__item(data-item="4") Пишу сложный JS с нуля
+        .slider__line
+            != pugHelpers.Icon.call(locals, {iconName: "line", className: "slider__svg-line", iconWidth: "100%", iconHeight: "15"})
+            != pugHelpers.Icon.call(locals, {iconName: "line-active", className: "slider__svg-line-active", iconWidth: "50%", iconHeight: "15"})
+            != pugHelpers.Icon.call(locals, {iconName: "pointer", className: "slider__svg-pointer", iconWidth: "23", iconHeight: "26"})

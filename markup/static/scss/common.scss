@@ -5,7 +5,7 @@ html, body {
 }
 
 .page {
-    
+    font-family: $roboto;
 }
 
 .page__wrapper {
@@ -20,3 +20,53 @@ html, body {
 .page__buffer {
     height: 50px;
 }
+
+.container{
+    max-width: 768px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.subtitle{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    color: $textColor;
+    line-height: 1;
+}
+
+.visualy-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+input, textarea{
+    &:focus{
+        border: 1px solid darken($borderColorInput, 30%);
+        outline: none;
+    }
+}
+
+::-webkit-input-placeholder {
+    color: $placeholderColor;
+    font-weight: 400;
+}
+::-moz-placeholder {
+    color: $placeholderColor;
+    font-weight: 400;
+}
+:-ms-input-placeholder {
+    color: $placeholderColor;
+    font-weight: 400;
+}
+:-moz-placeholder {
+    color: $placeholderColor;
+    font-weight: 400;
+}
+

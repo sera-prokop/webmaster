@@ -1,2 +1,15 @@
 // File for scss-vars.
 // For example: main colors, paddings and so on.
+
+$textColor: #1c1c1c;
+
+$headerColor: #435993;
+$headerItemActive: #1c1c1c;
+$headerColorHover: lighten($headerColor, 10%);
+$headerColorActive: lighten($headerColor, 20%);
+
+$placeholderColor: #c8c8c8;
+$inputColor: darken($placeholderColor, 20%);
+$borderColorInput: #e5e5e5;
+
+$btnColor: #435993;

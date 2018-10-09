@@ -1,0 +1,34 @@
+mixin skill(data)
+    #2.skill
+        != pugHelpers.Icon.call(locals, {iconName: "skill", className: "", iconWidth: "47", iconHeight: "47"})
+        h2.skill__subtitle.subtitle Расскажите о своем опыте
+        ul.skill__list
+            li.skill__item
+                input#bem.skill__input.visualy-hidden(type="checkbox" checked)
+                label.skill__label(for="bem") БЭМ/OOCSS
+            li.skill__item
+                input#semantic.skill__input.visualy-hidden(type="checkbox" checked)
+                label.skill__label(for="semantic") Верстаю семантично
+            li.skill__item
+                input#webpack.skill__input.visualy-hidden(type="checkbox" checked)
+                label.skill__label(for="webpack") Webpack
+            li.skill__item
+                input#pre.skill__input.visualy-hidden(type="checkbox" checked)
+                label.skill__label(for="pre") Stylus/LESS/SASS
+            li.skill__item
+                input#jsskill.skill__input.visualy-hidden(type="checkbox" checked)
+                label.skill__label(for="jsskill") ES2015/ES2016
+            li.skill__item
+                input#jquery.skill__input.visualy-hidden(type="checkbox" checked)
+                label.skill__label(for="jquery") jQuery
+            li.skill__item
+                input#svg.skill__input.visualy-hidden(type="checkbox" checked)
+                label.skill__label(for="svg") Работаю с SVG
+            li.skill__item
+                input#gulp.skill__input.visualy-hidden(type="checkbox" checked)
+                label.skill__label(for="gulp") Gulp/GRUNT
+            li.skill__item
+                input#git.skill__input.visualy-hidden(type="checkbox" checked)
+                label.skill__label(for="git") Ипользую Git
+
+

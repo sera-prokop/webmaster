@@ -2,7 +2,7 @@ module.exports = {
     "postcss": [],
     "svg": {
         "active": true,
-        "workflow": "sprite",
+        "workflow": "symbols",
         "symbolsConfig": {
             "loadingType": "inject",
             "usePolyfillForExternalSymbols": true,
@@ -52,7 +52,7 @@ module.exports = {
     "templater": "pug",
     "cssPreprocessor": "scss",
     "useImagesForDisplayWithDpi": [
-        96
+        96, 192
     ],
     "fs": {
         "staticFolderName": "static",

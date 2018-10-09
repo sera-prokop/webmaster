@@ -1,0 +1,25 @@
+mixin personal(data)
+    #1.personal
+        != pugHelpers.Icon.call(locals, {iconName: "personal", className: "", iconWidth: "47", iconHeight: "47"})
+        h2.personal__subtitle.subtitle Личная информация
+        .personal__field
+            label.visualy-hidden ФИО
+            input.personal__input(type="text" placeholder="ФИО" value="Прокопеня Сергей Владимирович")
+        .personal__field.personal__field--drop
+            label.visualy-hidden Год рождения
+            input.personal__input(type="text" placeholder="Год рождения" value="1981")
+            != pugHelpers.Icon.call(locals, {iconName: "arrow", className: "personal__arrow", iconWidth: "14", iconHeight: "9"})
+            ul.personal__list
+                li.personal__item 1980
+                li.personal__item 1981
+                li.personal__item 1982
+        .personal__field
+            label.visualy-hidden Место проживания
+            input.personal__input(type="text" placeholder="Место проживания" value="г.Брест Р.Беларусь")
+        .personal__field
+            label.visualy-hidden Skype
+            input.personal__input(type="text" placeholder="Skype" value="sera.prokop")
+        .personal__field
+            label.visualy-hidden E-mail
+            input.personal__input(type="text" placeholder="E-mail" value="sera.prokop@gmail.com")
+
